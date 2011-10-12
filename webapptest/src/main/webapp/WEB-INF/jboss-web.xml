@@ -1,3 +1,4 @@
 <jboss-web>
 	<!-- <context-root>app</context-root> -->
+	<security-domain>java:/jaas/other</security-domain>
 </jboss-web>

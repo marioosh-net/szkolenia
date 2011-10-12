@@ -6,6 +6,7 @@ import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 
 @Stateful
+@LocalBean
 public class HelloStateful implements HelloLocal, HelloRemote {
 
 	public static int count;
