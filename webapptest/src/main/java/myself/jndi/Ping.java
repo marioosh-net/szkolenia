@@ -22,6 +22,9 @@ import javax.sql.DataSource;
 public class Ping extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * wstrzykniecie DataSource'a
+	 */
 	@Resource(mappedName = "java:jboss/datasources/postgres")
 	private DataSource postgres;
 
