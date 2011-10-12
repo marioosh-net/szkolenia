@@ -1,4 +1,4 @@
-package myself;
+package myself.jsf;
 
 import java.util.Arrays;
 import javax.faces.bean.ManagedBean;

@@ -1,4 +1,4 @@
-package myself;
+package myself.servlets;
 
 import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;

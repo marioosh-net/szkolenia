@@ -1,4 +1,4 @@
-package myself;
+package myself.jsf;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

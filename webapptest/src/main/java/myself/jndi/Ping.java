@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
 /**
- * Servlet implementation class Ping
+ * Pod³¹czenie do DataSourca
  */
 @WebServlet("/Ping")
 public class Ping extends HttpServlet {

@@ -1,4 +1,4 @@
-package myself;
+package myself.servlets;
 
 import java.io.IOException;
 

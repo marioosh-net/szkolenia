@@ -16,7 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class JndiList
+ * Listuj dostepne interfejsy JNDI
+ * 
+ * http://localhost:8080/webapptest/JndiList?ctx=java:jboss
+ * 
  */
 @WebServlet("/JndiList")
 public class JndiList extends HttpServlet {

@@ -1,4 +1,4 @@
-package myself;
+package myself.servlets;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -21,7 +21,5 @@ public class AServlet1 extends HttpServlet {
 		AsyncContext ctx = arg0.startAsync();
 		System.out.println("Async started");
 		AServlet1.ctx = ctx;
-		
-
 	}
 }

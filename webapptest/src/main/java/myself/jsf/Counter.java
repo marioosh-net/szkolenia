@@ -1,4 +1,4 @@
-package myself;
+package myself.jsf;
 
 import javax.faces.bean.ManagedBean;
 
