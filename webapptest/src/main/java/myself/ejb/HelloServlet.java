@@ -27,6 +27,10 @@ public class HelloServlet extends HttpServlet {
 
 			out.write(ejb.hello());
 			out.write("\n"+ejb.getClass().getName());
+			
+			Hello ejb2 = (Hello) ctx.lookup("java:global/webapptest/Hello!myself.ejb.Hello");
+			out.write(ejb2.hello());
+			out.write("\n"+ejb2.getClass().getName());			
 
 		} catch (Exception e) {
 
