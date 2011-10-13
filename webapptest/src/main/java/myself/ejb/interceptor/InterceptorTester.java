@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Test interceptor
  */
-@WebServlet("/Tester1")
-public class Tester1 extends HttpServlet {
+@WebServlet("/InterceptorTester")
+public class InterceptorTester extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@EJB
@@ -25,6 +25,7 @@ public class Tester1 extends HttpServlet {
 
 		ejb.check("ala ma kota");
 		res.getWriter().write("ok");
+		
 	}
 
 }

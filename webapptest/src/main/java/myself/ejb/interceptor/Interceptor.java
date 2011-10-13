@@ -16,7 +16,12 @@ public class Interceptor {
 	}
 	
 	@PostConstruct
-	private void create() {
+	private void create(InvocationContext ctx) {
 		System.out.println("Interceptor created");
+		try {
+			ctx.proceed();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 	}
 }
