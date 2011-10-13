@@ -22,15 +22,14 @@ import javax.servlet.http.HttpServletResponse;
 public class JmsSender extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	@Resource(mappedName = "QueueConnectionFactory")
+	@Resource(mappedName = "java:/ConnectionFactory")
 	private javax.jms.QueueConnectionFactory qcf;
-	@Resource(mappedName = "responsetest")
+	@Resource(mappedName = "java:/queue/test")
 	private Queue q;
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
-		/*
 		try {
 			QueueConnection c = qcf.createQueueConnection();
 			QueueSession s = c.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
@@ -43,7 +42,6 @@ public class JmsSender extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		*/
 
 	}
 }
