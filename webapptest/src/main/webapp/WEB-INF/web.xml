@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web_1:web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/webapp_2_5.xsd" xmlns:web_1="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/webapp_2_5.xsd" xmlns:web_1="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>szkolenia-jsf20</display-name>
-  <web_1:servlet>
-    <web_1:servlet-name>FacesServlet</web_1:servlet-name>
-    <web_1:servlet-class>javax.faces.webapp.FacesServlet</web_1:servlet-class>
-  </web_1:servlet>
-  <web_1:servlet-mapping>
-    <web_1:servlet-name>FacesServlet</web_1:servlet-name>
-    <web_1:url-pattern>*.jsf</web_1:url-pattern>
-  </web_1:servlet-mapping>
-  <web_1:welcome-file-list>
-    <web_1:welcome-file>index.jsp</web_1:welcome-file>
-  </web_1:welcome-file-list>
-  <web_1:security-role>
+  <servlet>
+    <servlet-name>FacesServlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FacesServlet</servlet-name>
+    <url-pattern>*.jsf</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <security-role>
     <role-name>group1</role-name>
-  </web_1:security-role>
-  <web_1:login-config>
-    <web_1:auth-method>BASIC</web_1:auth-method>
-  </web_1:login-config>
-</web_1:web-app>
+  </security-role>
+  <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
+</web-app>
