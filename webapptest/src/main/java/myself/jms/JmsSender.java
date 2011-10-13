@@ -30,6 +30,7 @@ public class JmsSender extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
+		/*
 		try {
 			QueueConnection c = qcf.createQueueConnection();
 			QueueSession s = c.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
@@ -42,6 +43,7 @@ public class JmsSender extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		*/
 
 	}
 }
