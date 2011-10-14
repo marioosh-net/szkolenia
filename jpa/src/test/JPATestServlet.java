@@ -2,6 +2,7 @@ package test;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -23,7 +24,15 @@ public class JPATestServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
-		ejb.check1();
+		//ejb.check1();
+		try {
+			ejb.check2();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		ejb.check3();
+		ejb.check4();
 		res.getWriter().write("ok");
 		
 	}
