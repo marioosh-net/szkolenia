@@ -15,10 +15,17 @@ public class ClusterTestServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
+		
+		String attr = (String)req.getServletContext().getAttribute("test");
+		System.out.println(attr);
+		req.getServletContext().setAttribute("test", "jestem");
+		
 		String test = (String)req.getSession().getAttribute("test");
 		System.out.println(test);
+		
 		res.getWriter().write("test="+test+"\n");
 		res.getWriter().write("JSESSIONID="+req.getSession().getId());
+		
 		if(test == null) {
 			req.getSession().setAttribute("test", ""+System.currentTimeMillis());
 		}
